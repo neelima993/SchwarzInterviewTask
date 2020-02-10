@@ -1,0 +1,15 @@
+<div class="main">
+
+  <div class="content">
+    <ul class="list-group list-group-flush">
+      <li *ngFor="let post of displayingPost" class="list-group-item" (click)="onSelect(post)">
+        <a>{{post.title}}</a>
+      </li>
+    </ul>
+  </div>
+
+  <mat-paginator [length]="allPosts.length" [pageSize]="size" [pageIndex]="page" [pageSizeOptions]="[5, 10, 25]"
+  (page)="getData($event)">
+</mat-paginator>
+
+</div>

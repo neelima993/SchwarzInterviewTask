@@ -1,0 +1,9 @@
+<div class="aside-main">
+    <div *ngIf="selectedAuthor!=null" class="content">
+        <img src="../../assets/user.png" class="image">
+        <div>
+            <h6 class="text">{{selectedAuthor.name}}</h6>
+            <a class="text" href="http://{{selectedAuthor.website}}">{{selectedAuthor.website}}</a>
+        </div>
+    </div>
+</div>
