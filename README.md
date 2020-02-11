@@ -4,24 +4,28 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Please Run `npm install` to download the Dependancies.
+Then, Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Why Angular? 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+It is a full-fledged MVC framework that can run in any browser or platform. Moreover, it is consistent with ready-made tools, ng components are robust. It allows to reuse components and create SPA (Single Page Applications) that are light weight and run on the client machine. 
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Component Description
 
-## Running unit tests
+Header Component:      Contains Navigation bar (Responsive) on hover.
+Main Component :       This consists of 100 selectable posts.
+Detail-Page Component: Contains Users selected Post Details.
+Aside Component :      This is the context area (Author Details are displayed).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Service Description
+post Service:          Meant to call EndPoint for fetching Posts.
+author Service:        Meant to call Endpoint for fetching Author Details.
 
-## Running end-to-end tests
+## Routing/Navigation Module
+To navigate through different pages based on user interaction by reflecting it in URL, the paths have been defined in app-routing.ts Module.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Program Flow 
+Program has been structured and modularized into several Components and Services.
+On Clicking the links on the main-page (consisting of 100 posts), user is redirected to Detail-Page of the selected Post, as well as the aside-component gets updated with the selected Post's associated Author Details. (i.e Website Name and Author Name).
