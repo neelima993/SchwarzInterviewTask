@@ -20,8 +20,8 @@ Detail-Page Component: Contains Users selected Post Details.
 Aside Component :      This is the context area (Author Details are displayed).
 
 ## Service Description
-post Service:          Meant to call EndPoint for fetching Posts.
-author Service:        Meant to call Endpoint for fetching Author Details.
+A: post Service:          Meant to call EndPoint for fetching Posts.
+B: author Service:        Meant to call Endpoint for fetching Author Details.
 
 ## Routing/Navigation Module
 To navigate through different pages based on user interaction by reflecting it in URL, the paths have been defined in app-routing.ts Module.
